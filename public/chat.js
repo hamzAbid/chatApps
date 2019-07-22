@@ -1,6 +1,7 @@
+const port=process.env.PORT || 3000
 $(function(){
     //make connection
- var socket = io.connect('http://localhost:3000')
+ var socket = io.connect('http://localhost:'+ port)
 
  //buttons and inputs
  var message = $("#message")

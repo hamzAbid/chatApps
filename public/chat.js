@@ -1,6 +1,6 @@
 $(function(){
     //make connection
- var socket = io.connect()
+ var socket = io.connect({ transports: ['websocket'] })
 
  //buttons and inputs
  var message = $("#message")
